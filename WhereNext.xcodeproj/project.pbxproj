@@ -12,6 +12,13 @@
 		152C955421F119BB00039C90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 152C955221F119BB00039C90 /* Main.storyboard */; };
 		152C955621F119BC00039C90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 152C955521F119BC00039C90 /* Assets.xcassets */; };
 		152C955921F119BC00039C90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 152C955721F119BC00039C90 /* LaunchScreen.storyboard */; };
+		15D9ABA521F11D1C00EA5CCF /* CloseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D9ABA421F11D1C00EA5CCF /* CloseVC.swift */; };
+		15D9ABA721F11D2D00EA5CCF /* FarAwayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D9ABA621F11D2D00EA5CCF /* FarAwayVC.swift */; };
+		15D9ABA921F1236200EA5CCF /* CarnivalWheelSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D9ABA821F1236100EA5CCF /* CarnivalWheelSlice.swift */; };
+		15FD236F21F3A0190049E203 /* LobsterTwo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15FD236D21F3A0020049E203 /* LobsterTwo-Bold.ttf */; };
+		15FD237021F3A0190049E203 /* LobsterTwo-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15FD236C21F3A0020049E203 /* LobsterTwo-BoldItalic.ttf */; };
+		15FD237121F3A0190049E203 /* LobsterTwo-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15FD236E21F3A0030049E203 /* LobsterTwo-Italic.ttf */; };
+		741683902140381762957906 /* Pods_WhereNext.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC8A635EE1E16A3F3B578EFC /* Pods_WhereNext.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,15 @@
 		152C955521F119BC00039C90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		152C955821F119BC00039C90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		152C955A21F119BC00039C90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15D9ABA421F11D1C00EA5CCF /* CloseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseVC.swift; sourceTree = "<group>"; };
+		15D9ABA621F11D2D00EA5CCF /* FarAwayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarAwayVC.swift; sourceTree = "<group>"; };
+		15D9ABA821F1236100EA5CCF /* CarnivalWheelSlice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarnivalWheelSlice.swift; sourceTree = "<group>"; };
+		15FD236C21F3A0020049E203 /* LobsterTwo-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LobsterTwo-BoldItalic.ttf"; sourceTree = "<group>"; };
+		15FD236D21F3A0020049E203 /* LobsterTwo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LobsterTwo-Bold.ttf"; sourceTree = "<group>"; };
+		15FD236E21F3A0030049E203 /* LobsterTwo-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LobsterTwo-Italic.ttf"; sourceTree = "<group>"; };
+		9C1D654B306C065372827806 /* Pods-WhereNext.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhereNext.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhereNext/Pods-WhereNext.release.xcconfig"; sourceTree = "<group>"; };
+		CCA35F3062B103177590E192 /* Pods-WhereNext.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhereNext.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhereNext/Pods-WhereNext.debug.xcconfig"; sourceTree = "<group>"; };
+		FC8A635EE1E16A3F3B578EFC /* Pods_WhereNext.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhereNext.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +45,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				741683902140381762957906 /* Pods_WhereNext.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0495C7DA77841D9E1F586B17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC8A635EE1E16A3F3B578EFC /* Pods_WhereNext.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		152C954221F119BB00039C90 = {
 			isa = PBXGroup;
 			children = (
 				152C954D21F119BB00039C90 /* WhereNext */,
 				152C954C21F119BB00039C90 /* Products */,
+				9A2474F52000111ADFC034F3 /* Pods */,
+				0495C7DA77841D9E1F586B17 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +83,27 @@
 			children = (
 				152C954E21F119BB00039C90 /* AppDelegate.swift */,
 				152C955021F119BB00039C90 /* ViewController.swift */,
+				15D9ABA421F11D1C00EA5CCF /* CloseVC.swift */,
+				15D9ABA621F11D2D00EA5CCF /* FarAwayVC.swift */,
 				152C955221F119BB00039C90 /* Main.storyboard */,
 				152C955521F119BC00039C90 /* Assets.xcassets */,
 				152C955721F119BC00039C90 /* LaunchScreen.storyboard */,
 				152C955A21F119BC00039C90 /* Info.plist */,
+				15D9ABA821F1236100EA5CCF /* CarnivalWheelSlice.swift */,
+				15FD236D21F3A0020049E203 /* LobsterTwo-Bold.ttf */,
+				15FD236C21F3A0020049E203 /* LobsterTwo-BoldItalic.ttf */,
+				15FD236E21F3A0030049E203 /* LobsterTwo-Italic.ttf */,
 			);
 			path = WhereNext;
+			sourceTree = "<group>";
+		};
+		9A2474F52000111ADFC034F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CCA35F3062B103177590E192 /* Pods-WhereNext.debug.xcconfig */,
+				9C1D654B306C065372827806 /* Pods-WhereNext.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 152C955D21F119BC00039C90 /* Build configuration list for PBXNativeTarget "WhereNext" */;
 			buildPhases = (
+				D15D26A693771DFBBDF6ECB1 /* [CP] Check Pods Manifest.lock */,
 				152C954721F119BB00039C90 /* Sources */,
 				152C954821F119BB00039C90 /* Frameworks */,
 				152C954921F119BB00039C90 /* Resources */,
+				A7079B5A44A5349F88D2D011 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,6 +166,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15FD236F21F3A0190049E203 /* LobsterTwo-Bold.ttf in Resources */,
+				15FD237021F3A0190049E203 /* LobsterTwo-BoldItalic.ttf in Resources */,
+				15FD237121F3A0190049E203 /* LobsterTwo-Italic.ttf in Resources */,
 				152C955921F119BC00039C90 /* LaunchScreen.storyboard in Resources */,
 				152C955621F119BC00039C90 /* Assets.xcassets in Resources */,
 				152C955421F119BB00039C90 /* Main.storyboard in Resources */,
@@ -130,12 +177,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A7079B5A44A5349F88D2D011 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WhereNext/Pods-WhereNext-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TTFortuneWheel/TTFortuneWheel.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTFortuneWheel.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhereNext/Pods-WhereNext-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D15D26A693771DFBBDF6ECB1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WhereNext-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		152C954721F119BB00039C90 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15D9ABA521F11D1C00EA5CCF /* CloseVC.swift in Sources */,
 				152C955121F119BB00039C90 /* ViewController.swift in Sources */,
+				15D9ABA921F1236200EA5CCF /* CarnivalWheelSlice.swift in Sources */,
+				15D9ABA721F11D2D00EA5CCF /* FarAwayVC.swift in Sources */,
 				152C954F21F119BB00039C90 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +369,7 @@
 		};
 		152C955E21F119BC00039C90 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCA35F3062B103177590E192 /* Pods-WhereNext.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +388,7 @@
 		};
 		152C955F21F119BC00039C90 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C1D654B306C065372827806 /* Pods-WhereNext.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

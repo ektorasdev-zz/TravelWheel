@@ -1,24 +1,267 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pn9-qV-acb">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="LobsterTwo-BoldItalic.ttf">
+            <string>LobsterTwo-BoldItalic</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WhereNext" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOl-wM-LNz">
+                                <rect key="frame" x="84" y="468" width="207" height="52"/>
+                                <color key="backgroundColor" red="0.19858423223350252" green="0.19858423223350252" blue="0.19858423223350252" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="207" id="HNJ-vs-cNZ"/>
+                                    <constraint firstAttribute="height" constant="52" id="Y2K-ci-w7f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="LobsterTwo-BoldItalic" family="Lobster Two" pointSize="27"/>
+                                <state key="normal" title="Far Far Away!!!!!!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="G46-UN-Jb6" kind="show" id="aOQ-nU-NNr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFq-dR-JVy">
+                                <rect key="frame" x="84" y="346" width="207" height="52"/>
+                                <color key="backgroundColor" red="0.17599936548223349" green="0.17599936548223349" blue="0.17599936548223349" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="7hP-Fn-PMu"/>
+                                    <constraint firstAttribute="width" constant="207" id="BG2-vu-hUj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="LobsterTwo-BoldItalic" family="Lobster Two" pointSize="25"/>
+                                <state key="normal" title="Somewhere Close.....">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="OVf-Ap-mHV" kind="show" id="lI1-1s-OHE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRAVEL WHEEL" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPe-3x-FQL">
+                                <rect key="frame" x="30" y="134" width="315" height="142"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="142" id="6aZ-PC-rWs"/>
+                                    <constraint firstAttribute="width" constant="315" id="g5X-8N-vwe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="LobsterTwo-BoldItalic" family="Lobster Two" pointSize="56"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.30196078431372547" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="vFq-dR-JVy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0va-qe-PRl"/>
+                            <constraint firstItem="BOl-wM-LNz" firstAttribute="centerX" secondItem="vFq-dR-JVy" secondAttribute="centerX" id="2Rb-j3-Xnh"/>
+                            <constraint firstItem="BOl-wM-LNz" firstAttribute="top" secondItem="vFq-dR-JVy" secondAttribute="bottom" constant="70" id="8Hf-vN-FYA"/>
+                            <constraint firstItem="iPe-3x-FQL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fga-0x-jyj"/>
+                            <constraint firstItem="iPe-3x-FQL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="TON-NW-BEh"/>
+                            <constraint firstItem="vFq-dR-JVy" firstAttribute="top" secondItem="iPe-3x-FQL" secondAttribute="bottom" constant="70" id="c3X-kJ-nqa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="fXa-m0-XMf" colorLabel="IBBuiltInLabel-Red"/>
+                    <connections>
+                        <outlet property="closeBtn" destination="vFq-dR-JVy" id="2uy-Vs-UGM"/>
+                        <outlet property="farBtn" destination="BOl-wM-LNz" id="CN6-TH-EXv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1608.8" y="27.436281859070466"/>
+        </scene>
+        <!--CloseVC-->
+        <scene sceneID="LyZ-Gr-Vbb">
+            <objects>
+                <viewController id="OVf-Ap-mHV" customClass="CloseVC" customModule="WhereNext" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="stg-ex-J41">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O5L-9M-mEh" customClass="TTFortuneWheel" customModule="TTFortuneWheel">
+                                <rect key="frame" x="16" y="153" width="343" height="343"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="O5L-9M-mEh" secondAttribute="height" multiplier="1:1" id="Fnv-pI-uFr"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wheelFrame" translatesAutoresizingMaskIntoConstraints="NO" id="AdQ-Bz-mBT">
+                                <rect key="frame" x="3" y="140.5" width="369" height="386"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="AdQ-Bz-mBT" secondAttribute="height" multiplier="369:386" id="hMf-Wk-ho5"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7L-dY-R5H">
+                                <rect key="frame" x="99.5" y="247.5" width="176" height="178"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="-15" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="SPIN" backgroundImage="spin">
+                                    <color key="titleColor" red="1" green="0.97396980263917765" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="rotateBtn:" destination="OVf-Ap-mHV" eventType="touchUpInside" id="dgJ-f1-Rrd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQg-0S-Mc7">
+                                <rect key="frame" x="131" y="84" width="113" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="WTs-yO-LzX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="LobsterTwo-BoldItalic" family="Lobster Two" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE WHEEL!!!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9V-9u-MIx">
+                                <rect key="frame" x="33" y="557" width="309" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="uEn-48-dYR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="LobsterTwo-BoldItalic" family="Lobster Two" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.3025834302" blue="0.29161179040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="dGr-5K-HN3" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="AdQ-Bz-mBT" secondAttribute="trailing" constant="3" id="5GQ-Lw-bSP"/>
+                            <constraint firstItem="AdQ-Bz-mBT" firstAttribute="centerX" secondItem="e7L-dY-R5H" secondAttribute="centerX" id="E2V-YY-abn"/>
+                            <constraint firstItem="O5L-9M-mEh" firstAttribute="centerY" secondItem="AdQ-Bz-mBT" secondAttribute="centerY" constant="-9" id="GIf-ds-JLi"/>
+                            <constraint firstItem="Y9V-9u-MIx" firstAttribute="centerX" secondItem="stg-ex-J41" secondAttribute="centerX" id="Lp9-RD-9Xr"/>
+                            <constraint firstItem="gQg-0S-Mc7" firstAttribute="top" secondItem="dGr-5K-HN3" secondAttribute="top" constant="20" id="NQi-yA-c7Y"/>
+                            <constraint firstItem="AdQ-Bz-mBT" firstAttribute="centerY" secondItem="e7L-dY-R5H" secondAttribute="centerY" constant="-3" id="NYj-h6-I1l"/>
+                            <constraint firstItem="AdQ-Bz-mBT" firstAttribute="centerX" secondItem="stg-ex-J41" secondAttribute="centerX" id="R5J-pk-Pq7"/>
+                            <constraint firstItem="dGr-5K-HN3" firstAttribute="trailing" secondItem="O5L-9M-mEh" secondAttribute="trailing" constant="16" id="SMP-Mn-vBg"/>
+                            <constraint firstItem="AdQ-Bz-mBT" firstAttribute="centerY" secondItem="stg-ex-J41" secondAttribute="centerY" id="Te7-M7-aTf"/>
+                            <constraint firstItem="gQg-0S-Mc7" firstAttribute="centerX" secondItem="stg-ex-J41" secondAttribute="centerX" id="fyp-6L-nav"/>
+                            <constraint firstItem="AdQ-Bz-mBT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dGr-5K-HN3" secondAttribute="leading" constant="3" id="hnW-tJ-x55"/>
+                            <constraint firstItem="O5L-9M-mEh" firstAttribute="leading" secondItem="AdQ-Bz-mBT" secondAttribute="leading" constant="13" id="pRx-6k-4dF"/>
+                            <constraint firstItem="Y9V-9u-MIx" firstAttribute="top" secondItem="AdQ-Bz-mBT" secondAttribute="bottom" constant="30.5" id="z09-eA-vr7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dGr-5K-HN3"/>
+                    </view>
+                    <connections>
+                        <outlet property="wheelSpin" destination="O5L-9M-mEh" id="Fjg-IW-YRJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ya5-vP-hc0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2392.8000000000002" y="-143.47826086956522"/>
+        </scene>
+        <!--Far AwayVC-->
+        <scene sceneID="dFI-sV-vLo">
+            <objects>
+                <viewController id="G46-UN-Jb6" customClass="FarAwayVC" customModule="WhereNext" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c1c-pV-HOd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KsP-wU-OOF" customClass="TTFortuneWheel" customModule="TTFortuneWheel">
+                                <rect key="frame" x="16" y="153" width="343" height="343"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="KsP-wU-OOF" secondAttribute="height" multiplier="1:1" id="U3D-de-4Hq"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wheelFrame" translatesAutoresizingMaskIntoConstraints="NO" id="9e2-mI-jwC">
+                                <rect key="frame" x="3" y="140.5" width="369" height="386"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9e2-mI-jwC" secondAttribute="height" multiplier="369:386" id="vMR-jV-7kZ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dy-bn-Kek">
+                                <rect key="frame" x="99.5" y="244.5" width="176" height="178"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="-17" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="SPIN" backgroundImage="spin">
+                                    <color key="titleColor" red="1" green="0.97396980259999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="rotateButton:" destination="G46-UN-Jb6" eventType="touchUpInside" id="LJc-x3-9OS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE WHEEL!!!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTy-LN-VxF">
+                                <rect key="frame" x="33" y="551" width="309" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="6GP-bf-44A"/>
+                                    <constraint firstAttribute="height" constant="63" id="T3f-Rf-DNa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="LobsterTwo-BoldItalic" family="Lobster Two" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXM-TQ-lkY">
+                                <rect key="frame" x="131" y="84" width="113" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="63" id="2ZB-ty-2V3"/>
+                                    <constraint firstAttribute="height" constant="63" id="Ko3-v4-OYD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="LobsterTwo-BoldItalic" family="Lobster Two" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.3025834302" blue="0.29161179040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="9e2-mI-jwC" firstAttribute="centerX" secondItem="3dy-bn-Kek" secondAttribute="centerX" id="0it-TF-17Y"/>
+                            <constraint firstItem="9e2-mI-jwC" firstAttribute="centerY" secondItem="c1c-pV-HOd" secondAttribute="centerY" id="7vb-Ue-HZn"/>
+                            <constraint firstItem="fXM-TQ-lkY" firstAttribute="top" secondItem="aLB-9O-Xhn" secondAttribute="top" constant="20" id="9zM-E3-bIM"/>
+                            <constraint firstItem="9e2-mI-jwC" firstAttribute="centerX" secondItem="c1c-pV-HOd" secondAttribute="centerX" id="DsP-Ka-dTT"/>
+                            <constraint firstItem="aLB-9O-Xhn" firstAttribute="trailing" secondItem="KsP-wU-OOF" secondAttribute="trailing" constant="16" id="Imf-wr-I8Y"/>
+                            <constraint firstItem="aLB-9O-Xhn" firstAttribute="trailing" secondItem="9e2-mI-jwC" secondAttribute="trailing" constant="3" id="K5y-qp-fqo"/>
+                            <constraint firstItem="9e2-mI-jwC" firstAttribute="centerY" secondItem="3dy-bn-Kek" secondAttribute="centerY" id="Mx1-wl-mOK"/>
+                            <constraint firstItem="CTy-LN-VxF" firstAttribute="centerX" secondItem="c1c-pV-HOd" secondAttribute="centerX" id="NbA-zz-CMR"/>
+                            <constraint firstItem="CTy-LN-VxF" firstAttribute="top" secondItem="9e2-mI-jwC" secondAttribute="bottom" constant="24.5" id="Tmw-L7-ekU"/>
+                            <constraint firstItem="KsP-wU-OOF" firstAttribute="leading" secondItem="9e2-mI-jwC" secondAttribute="leading" constant="13" id="XY9-e2-nqD"/>
+                            <constraint firstItem="9e2-mI-jwC" firstAttribute="leading" secondItem="aLB-9O-Xhn" secondAttribute="leading" constant="3" id="Xd2-Pj-f8P"/>
+                            <constraint firstItem="KsP-wU-OOF" firstAttribute="centerY" secondItem="9e2-mI-jwC" secondAttribute="centerY" constant="-9" id="apP-v3-C0B"/>
+                            <constraint firstItem="fXM-TQ-lkY" firstAttribute="centerX" secondItem="c1c-pV-HOd" secondAttribute="centerX" id="dpi-af-XgF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aLB-9O-Xhn"/>
+                    </view>
+                    <connections>
+                        <outlet property="spinningWheel" destination="KsP-wU-OOF" id="Pb6-pu-mgd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="owd-EX-IiZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2392.8000000000002" y="571.66416791604206"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CUs-2k-TwC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Pn9-qV-acb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ohq-u8-DRW">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="IPk-aQ-mv4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MZY-hd-FSq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="745" y="27"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="spin" width="176" height="178"/>
+        <image name="wheelFrame" width="369" height="386"/>
+    </resources>
 </document>
